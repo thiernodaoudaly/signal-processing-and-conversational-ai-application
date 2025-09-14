@@ -1,0 +1,8 @@
+tkinter
+tkhtmlview
+speechrecognition
+google-generativeai
+markdown2
+pyttsx3
+beautifulsoup4
+pyaudio
