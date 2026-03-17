@@ -1,68 +1,63 @@
-# SmartQuery – Application de Traitement du Signal et d’IA Conversationnelle
+# SmartQuery – Signal Processing and Conversational AI Application
 
 ## Description
-**SmartQuery** est une application de bureau interactive qui combine **traitement du signal**, **intelligence artificielle** et **interface graphique**.  
-Elle permet :  
-- La **reconnaissance vocale** pour interagir par la voix,  
-- La **génération de réponses** avec l’API Google Generative AI (PaLM),  
-- La **conversion texte en parole (TTS)** pour une interaction naturelle,  
-- Une **interface Tkinter personnalisée** avec affichage enrichi en HTML/Markdown.  
+**SmartQuery** is an interactive desktop application that combines **signal processing**, **artificial intelligence**, and a **graphical user interface**.  
+It enables:  
+- **Speech recognition** for voice interaction,  
+- **Response generation** using the Google Generative AI API (PaLM),  
+- **Text-to-speech (TTS)** for natural interaction,  
+- A **custom Tkinter interface** with enhanced HTML/Markdown rendering.  
 
-Cette application illustre l’utilisation conjointe de la reconnaissance vocale, de l’IA générative et de la synthèse vocale dans un cadre ergonomique.  
+This application demonstrates the integration of speech recognition, generative AI, and speech synthesis in an ergonomic environment.
 
-## Fonctionnalités
-- **Reconnaissance vocale** en anglais (via Google Speech Recognition API).  
-- **Chat IA** avec Google PaLM configuré comme assistant développeur.  
-- **Synthèse vocale (TTS)** avec `pyttsx3`.  
-- **Interface utilisateur Tkinter** avec affichage HTML grâce à `tkhtmlview`.  
-- **Multithreading** pour fluidifier les interactions (parole, affichage, IA).  
-- **Authentification biométrique vocale** (concept démonstratif).  
+## Features
+- **Speech recognition** in English (via Google Speech Recognition API).  
+- **AI chat** powered by Google PaLM configured as a developer assistant.  
+- **Text-to-speech (TTS)** using `pyttsx3`.  
+- **Tkinter user interface** with HTML rendering via `tkhtmlview`.  
+- **Multithreading** for smooth interactions (speech, display, AI).  
+- **Voice biometric authentication** (proof-of-concept).  
 
-## Technologies utilisées
-- **Tkinter** → Interface graphique.  
-- **SpeechRecognition + PyAudio** → Reconnaissance vocale.  
-- **Google Generative AI (PaLM API)** → Génération de réponses IA.  
-- **Markdown2 + BeautifulSoup** → Conversion et affichage Markdown/HTML.  
-- **pyttsx3** → Synthèse vocale hors-ligne.  
+## Technologies Used
+- **Tkinter** → Graphical user interface  
+- **SpeechRecognition + PyAudio** → Speech recognition  
+- **Google Generative AI (PaLM API)** → AI response generation  
+- **Markdown2 + BeautifulSoup** → Markdown to HTML conversion and rendering  
+- **pyttsx3** → Offline text-to-speech  
 
-## Installation et exécution
+## Installation and Setup
 
-### Cloner le projet
+### Clone the repository
 ```bash
 git clone https://github.com/thiernodaoudaly/smartquery.git
 cd SmartQuery
 ```
-
-### Créer et activer un environnement virtuel
-
+### Create and activate a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
 ```
-
-### Installer les dépendances
-
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-### Lancer l’application
-
+### Run the application
 ```bash
 python window.py
 ```
 
-## Aperçu
+## Preview
+- Home screen with voice biometric authentication
+- Main interface with text input, microphone buttons, and interactive display
+- Smooth interaction with generative AI and real-time audio feedback
 
-* Page d’accueil avec authentification biométrique vocale.
-* Interface principale avec champ texte, boutons microphone et affichage interactif.
-* Interaction fluide avec l’IA générative et retour audio en temps réel.
+## Future Improvements
+- Add multilingual support (FR, EN, etc.)
+- Enhance voice biometric authentication with a machine learning model
+- Integrate a local knowledge base for a personalized assistant
 
-## Améliorations futures
-
-* Ajouter le support multilingue (FR, EN, etc.).
-* Enrichir l’authentification biométrique vocale avec un modèle ML.
-* Intégrer une base de connaissances locale pour un assistant personnalisé.
-
-
+## Contributors
+- Michel Junior DELANOUE
+- Thierno Daouda LY
+- Ndeye Fatou NIASSY
